@@ -7,7 +7,7 @@ st.set_page_config(page_title="Text Summarizer", layout="centered")
 
 # Title
 st.title("📝 Media Interview Transcript Summarizer")
-st.markdown("This app uses `BART` to summarize long text or dialogue.")
+st.markdown("This app uses `DistilBART` to summarize long text or dialogue.")
 
 # Load model and tokenizer once
 @st.cache_resource
