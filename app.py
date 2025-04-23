@@ -47,7 +47,7 @@ if st.button("Summarize"):
                     input_ids,
                     attention_mask=attention_mask,
                     num_beams=4,
-                    max_length=4096,
+                    max_length=8092,
                     min_length=80,
                     length_penalty=1.0,
                     early_stopping=True
