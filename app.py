@@ -37,7 +37,7 @@ if st.button("Summarize"):
     else:
         with st.spinner("Generating summary..."):
             inputs = tokenizer(
-                st.session_state.input_text, return_tensors="pt", max_length=4096, truncation=True
+                st.session_state.input_text, return_tensors="pt", max_length=8092, truncation=True
             )
             input_ids = inputs["input_ids"].to(device)
             attention_mask = inputs["attention_mask"].to(device)
